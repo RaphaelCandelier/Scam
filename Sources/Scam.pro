@@ -39,3 +39,8 @@ unix:!macx: INCLUDEPATH += /usr/local/Spinnaker/include
 unix:!macx: DEPENDPATH += /usr/local/Spinnaker/lib
 
 # --- WINDOWS
+
+win32: LIBS += -L'C:/Program Files/Point Grey Research/Spinnaker/lib/vs2015/' -lSpinnaker_v140
+win32: LIBS += -Wl,-rpath-link='C:/Program Files/Point Grey Research/Spinnaker/lib/vs2015/'
+win32: INCLUDEPATH += 'C:/Program Files/Point Grey Research/Spinnaker/lib/include'
+win32: DEPENDPATH += 'C:/Program Files/Point Grey Research/Spinnaker/lib/vs2015'
